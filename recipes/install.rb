@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: redis_wrapper_cluster
-# Recipe:: default
+# Recipe:: install
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
