@@ -4,7 +4,7 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
-
+# Install dependencies first from redisio 
 include_recipe 'redisio::_install_prereqs'
 include_recipe 'build-essential::default'
 
