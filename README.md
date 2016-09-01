@@ -1,5 +1,5 @@
 # redis_wrapper
 
-TODO: Enter the cookbook description here.
+This cookbook with create a redis cluster with many masters and slaves using latest Redis 3.* version.
 
 Start with default.rb
