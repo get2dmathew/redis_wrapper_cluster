@@ -10,7 +10,7 @@
       block do
           #tricky way to load this Chef::Mixin::ShellOut utilities
           Chef::Resource::RubyBlock.send(:include, Chef::Mixin::ShellOut)
-          command = "redis-cli  -p 7000 cluster nodes | grep disconnected | awk '{print $1}'"
+          command = "redis-cli  -p 6379 cluster nodes | grep disconnected | awk '{print $1}'"
           command_out = shell_out(command)
           node.set['all_nodes_from_redis_process'] = command_out.stdout
           puts "******************** #{command_out.stdout} "
