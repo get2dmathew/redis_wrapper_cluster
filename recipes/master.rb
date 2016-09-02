@@ -22,7 +22,7 @@ if node['fqdn'].gsub(/[^\d]/, '')[0].to_i.odd?
   if !master_node.nil? && master_node.count >=3
     Chef::Log.info('Minium  Master Servers for Cluster found ! Adding  masters to cluster ')
       # Create the cluster with the 3 master nodes if we have 3 minimum nodes 
-      # TODO currently -trib.rb create dont provide non-interactive option to accest , so using expect .
+      # TODO currently redis-trib.rb create dont provide non-interactive option to accept  , so using expect .
 
       bash 'Install Master Cluster' do
           user 'root'
